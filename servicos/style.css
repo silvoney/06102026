@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f6fa;
+
+    color: #1f2937;
+}
+
+
+/* CABEÇALHO */
+
+.topo {
+    height: 80px;
+
+    background: #ed514b;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 70px;
+
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+}
+
+nav a:hover,
+nav a.ativo {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* CONTEÚDO */
+
+main {
+    max-width: 1100px;
+
+    margin: 55px auto;
+
+    padding: 0 25px;
+}
+
+.cabecalho {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 30px;
+}
+
+.numero {
+    color: #ed514b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 10px 0;
+
+    font-size: 36px;
+}
+
+.cabecalho p {
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+
+/* BOTÃO */
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    border-radius: 9px;
+
+    padding: 12px 18px;
+}
+
+.vermelho-btn {
+    background: #ed514b;
+
+    color: white;
+}
+
+.vermelho-btn:hover {
+    background: #d83d37;
+}
+
+
+/* SERVIÇOS */
+
+.grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.servico {
+    background: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+.icone {
+    color: #ed514b;
+
+    font-size: 24px;
+
+    margin-bottom: 20px;
+}
+
+.dados h2 {
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+.dados p {
+    color: #ed514b;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+/* AÇÕES */
+
+.acoes {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+.acoes button {
+    background: #e5e7eb;
+
+    color: #1f2937;
+}
+
+.acoes button:hover {
+    background: #d1d5db;
+}
+
+.acoes .excluir {
+    background: #ed514b;
+
+    color: white;
+}
+
+.acoes .excluir:hover {
+    background: #d83d37;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .topo {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        font-size: 11px;
+
+        padding: 8px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+}

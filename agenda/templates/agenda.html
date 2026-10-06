@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AgendaFácil - Agenda</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<header class="topo">
+
+    <div class="logo">
+        AgendaFácil
+    </div>
+
+    <nav>
+
+        <a href="http://localhost:8080/06102026/clientes/clientes.php">
+            CLIENTES
+        </a>
+
+        <a class="ativo"
+           href="http://127.0.0.1:5000">
+            AGENDA
+        </a>
+
+        <a href="http://localhost:8080/06102026/servicos/">
+            SERVIÇOS
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <div class="cabecalho">
+
+        <div>
+
+            <span class="numero">
+                02 • AGENDA
+            </span>
+
+            <h1>
+                Próximos horários
+            </h1>
+
+            <p>
+                Visualize e organize os horários agendados.
+            </p>
+
+        </div>
+
+
+        <button
+            class="verde-btn"
+            onclick="novoHorario()">
+
+            + Criar horário
+
+        </button>
+
+    </div>
+
+
+    <section class="agenda">
+
+
+        <div class="horario">
+
+            <div class="hora">
+
+                <strong>
+                    09:00
+                </strong>
+
+                <span>
+                    Hoje
+                </span>
+
+            </div>
+
+
+            <div class="info">
+
+                <strong>
+                    Maria Oliveira
+                </strong>
+
+                <span>
+                    Corte de cabelo
+                </span>
+
+            </div>
+
+
+            <div class="acoes">
+
+                <button onclick="editar()">
+                    Editar
+                </button>
+
+                <button
+                    class="excluir"
+                    onclick="excluir(this)">
+
+                    Excluir
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="horario">
+
+            <div class="hora">
+
+                <strong>
+                    14:30
+                </strong>
+
+                <span>
+                    Hoje
+                </span>
+
+            </div>
+
+
+            <div class="info">
+
+                <strong>
+                    João Santos
+                </strong>
+
+                <span>
+                    Barba
+                </span>
+
+            </div>
+
+
+            <div class="acoes">
+
+                <button onclick="editar()">
+                    Editar
+                </button>
+
+                <button
+                    class="excluir"
+                    onclick="excluir(this)">
+
+                    Excluir
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="horario">
+
+            <div class="hora">
+
+                <strong>
+                    16:00
+                </strong>
+
+                <span>
+                    Amanhã
+                </span>
+
+            </div>
+
+
+            <div class="info">
+
+                <strong>
+                    Ana Souza
+                </strong>
+
+                <span>
+                    Corte + Barba
+                </span>
+
+            </div>
+
+
+            <div class="acoes">
+
+                <button onclick="editar()">
+                    Editar
+                </button>
+
+                <button
+                    class="excluir"
+                    onclick="excluir(this)">
+
+                    Excluir
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<script>
+
+function novoHorario() {
+
+    alert("Novo horário criado!");
+
+}
+
+
+function editar() {
+
+    alert("Editando horário!");
+
+}
+
+
+function excluir(botao) {
+
+    if (confirm("Deseja excluir este horário?")) {
+
+        botao.closest(".horario").remove();
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>

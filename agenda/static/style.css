@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: #f5f6fa;
+
+    color: #1f2937;
+}
+
+
+/* CABEÇALHO */
+
+.topo {
+    height: 80px;
+
+    background: #32a37e;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 70px;
+
+    color: white;
+}
+
+.logo {
+    font-size: 26px;
+
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+}
+
+nav a:hover,
+nav a.ativo {
+    background: rgba(255,255,255,0.2);
+}
+
+
+/* CONTEÚDO */
+
+main {
+    max-width: 1100px;
+
+    margin: 55px auto;
+
+    padding: 0 25px;
+}
+
+.cabecalho {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: end;
+
+    margin-bottom: 30px;
+}
+
+.numero {
+    color: #32a37e;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 10px 0;
+
+    font-size: 36px;
+}
+
+.cabecalho p {
+    color: #6b7280;
+
+    font-size: 16px;
+}
+
+
+/* BOTÃO */
+
+button {
+    border: none;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    border-radius: 9px;
+
+    padding: 12px 18px;
+}
+
+.verde-btn {
+    background: #32a37e;
+
+    color: white;
+}
+
+.verde-btn:hover {
+    background: #278765;
+}
+
+
+/* AGENDA */
+
+.agenda {
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+    overflow: hidden;
+}
+
+.horario {
+    display: flex;
+
+    align-items: center;
+
+    gap: 35px;
+
+    padding: 25px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.horario:last-child {
+    border-bottom: none;
+}
+
+
+/* HORÁRIO */
+
+.hora {
+    min-width: 100px;
+}
+
+.hora strong {
+    display: block;
+
+    font-size: 22px;
+
+    color: #32a37e;
+}
+
+.hora span {
+    color: #6b7280;
+
+    margin-top: 5px;
+
+    display: block;
+}
+
+
+/* INFORMAÇÕES */
+
+.info {
+    flex: 1;
+}
+
+.info strong {
+    font-size: 17px;
+}
+
+.info span {
+    display: block;
+
+    color: #6b7280;
+
+    margin-top: 5px;
+}
+
+
+/* AÇÕES */
+
+.acoes {
+    display: flex;
+
+    gap: 8px;
+}
+
+.acoes button {
+    background: #e5e7eb;
+
+    color: #1f2937;
+}
+
+.acoes button:hover {
+    background: #d1d5db;
+}
+
+.acoes .excluir {
+    background: #ef4444;
+
+    color: white;
+}
+
+.acoes .excluir:hover {
+    background: #dc2626;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .topo {
+        padding: 0 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav {
+        gap: 3px;
+    }
+
+    nav a {
+        font-size: 11px;
+
+        padding: 8px;
+    }
+
+    .cabecalho {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .horario {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+}

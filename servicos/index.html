@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AgendaFácil - Serviços</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="topo">
+
+    <div class="logo">
+        AgendaFácil
+    </div>
+
+
+    <nav>
+
+        <a href="http://localhost:8080/06102026/clientes/clientes.php">
+            CLIENTES
+        </a>
+
+        <a href="http://127.0.0.1:5000">
+            AGENDA
+        </a>
+
+        <a class="ativo"
+           href="http://localhost:8080/06102026/servicos/">
+            SERVIÇOS
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <div class="cabecalho">
+
+        <div>
+
+            <span class="numero">
+                03 • SERVIÇOS
+            </span>
+
+            <h1>
+                Catálogo
+            </h1>
+
+            <p>
+                Gerencie os serviços disponíveis no AgendaFácil.
+            </p>
+
+        </div>
+
+
+        <button
+            class="vermelho-btn"
+            onclick="novoServico()">
+
+            + Adicionar
+
+        </button>
+
+    </div>
+
+
+    <section
+        id="servicos"
+        class="grid">
+    </section>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
